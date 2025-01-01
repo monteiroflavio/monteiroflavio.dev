@@ -4,7 +4,5 @@ updates:
     directory: "/"           # Location of the `package.json` or equivalent
     schedule:
       interval: "daily"     # Frequency: daily, weekly, or monthly
-      time: "14:10"         # Time of day: 03:00 (UTC)
-      timezone: "America/Sao_Paulo" # Timezone: see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     commit-message:
       prefix: "deps"
