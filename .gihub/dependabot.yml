@@ -3,6 +3,6 @@ updates:
   - package-ecosystem: "npm" # Adjust for your package manager (e.g., `pip`, `nuget`, etc.)
     directory: "/"           # Location of the `package.json` or equivalent
     schedule:
-      interval: "weekly"     # Frequency: daily, weekly, or monthly
+      interval: "daily"     # Frequency: daily, weekly, or monthly
     commit-message:
       prefix: "deps"
