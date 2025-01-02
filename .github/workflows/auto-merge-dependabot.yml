@@ -25,6 +25,8 @@ jobs:
           else
             echo "::set-output name=has-dependencies-label::false"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Auto-merge if Dependabot and tests pass
         if: steps.dependabot.outputs.is-dependabot == 'true' && steps.check_label.outputs.has-dependencies-label == 'true'
